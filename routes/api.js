@@ -1,14 +1,18 @@
-// const router = require("express").Router();
-// const Workout = require("../models/workout.js");
+const router = require("express").Router();
+const Workout = require("../models/Workout.js");
 
 
-// // New Exerice
-// router.post("/api/transaction", ({ body }, res) => {
-//     Transaction.create(body)
-//       .then(dbTransaction => {
-//         res.json(dbTransaction);
-//       })
-//       .catch(err => {
-//         res.status(400).json(err);
-//       });
-//   });
+
+// getLastWorkout() | /api/workouts
+router.get("/api/workouts", (req, res) => {
+    Workout.find({})
+        .then(data => {
+            res.json(data);
+        })
+        .catch(err => {
+            res.status(400).json(err);
+        });
+});
+
+// Export routes for use in server?
+module.exports = router;
