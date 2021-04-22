@@ -6,7 +6,7 @@
 - Email:          Kyle7286@gmail.com
 - Github:         https://github.com/Kyle7286/
 - Repo:           https://github.com/Kyle7286/fitness-tracker
-- Deployed:       
+- Deployed:       https://still-sierra-18808.herokuapp.com/
 
 ## About/Purpose ❔
 ---
