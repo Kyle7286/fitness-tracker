@@ -28,9 +28,8 @@ router.put("/api/workouts/:id", (req, res) => {
 });
 
 
-// Workout Exercise | /api/workouts/608096aa6918b331584a17f8
-router.put("/api/workouts/", ({ body }, res) => {
-
+// Create Workout | /api/workouts/
+router.post("/api/workouts/", ({ body }, res) => {
     Workout.create(body)
         .then(data => {
             console.log(data);
